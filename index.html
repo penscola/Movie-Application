@@ -2,12 +2,13 @@
     <head>
         <title>To-Do List</title>
         <link rel="stylesheet" href="/To_do_list/style.css">
+        <script src="/To_do_list/script.js" defer></script>
     </head>
     <body>
         <div class="header">
             <h2 style="margin: 5px">My To Do List</h2>
             <input type="text" id="myInput" placeholder="Title..." />
-            <span class="addBtn">Add</span>
+            <span onclick="newElement()" class="addBtn">Add</span>
         </div>
         <ul id="myList">
             <li>Hit the gym</li>
