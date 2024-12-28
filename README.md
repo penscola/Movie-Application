@@ -5,7 +5,10 @@ To Do List was made to teach myself HTML, CSS, and Javascript, and their related
 I spent on work projects so that I could fill out my timesheet accurately at the end of the day.
 
 ## Technologies
-Front-end
+### Front-end
+ - HTML5
+ - JavaScript
+ - Css
 
 
 ## Licensing terms:
