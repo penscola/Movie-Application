@@ -1,25 +1,22 @@
-import {useState} from "react";
-
-const Card = ({title}) => {
-    const [hasLiked, setHasLiked] = useState(false)
-  return (
-      <div className="card">
-          <h2>{title}</h2>
-
-          <button onClick={() => setHasLiked(true)}>
-              Like
-          </button>
-      </div>
-  )
-}
+import React, {useState} from 'react'
+import Search from "./components/Search.jsx";
 
 const App = () => {
+    const [searchTerm, setSearchTerm] = useState('')
+    
     return (
-        <div className="card-container">
-            <Card title="Star Wars" ratings={5} isCool={true} actors={[{name: 'Actors'}]} />
-            <Card title="Avatar" />
-            <Card title="The Lion King" />
-        </div>
+        <main>
+            <div className="pattern" />
+
+            <div className="wrapper">
+                <header>
+                    <img src="public/hero.png" alt="Hero Banner" />
+                    <h1>Find <span className="text-gradient">Movies</span> you'll enjoy without the Hassle</h1>
+
+                    <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+                </header>
+            </div>
+        </main>
     )
 }
 
